@@ -1,12 +1,11 @@
 ---
 
-order: 1
+order: 10
 
 ---
 
-## Welcome
+## Git And GitHub For Researchers
 
-Welcome to Apprentice and the jekyll-reveal.js example presentation.
 
 
 

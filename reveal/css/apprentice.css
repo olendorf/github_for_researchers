@@ -3,6 +3,11 @@
   display: inline-block;
   width: 40%;
   vertical-align: top;
+  font-size: 28px;
+}
+
+.reveal .row img{
+  max-height: 400px
 }
 
 /*.reveal div .two-col ul {*/
