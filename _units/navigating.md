@@ -73,7 +73,49 @@ Sometimes you may have to go back further than your last commit too. You can do 
 ```bash
 > git log
   # You should see a list of yoru commits. Hit return to scroll through.
+  # commit 4a04c5e359539fab014b497706ea8cae942de70d
+  # Author: Robert Olendorf <myemail@example.com>
+  # Date:   Sun Sep 15 13:56:07 2019 +0000
+
+:
 ```
 
 
-There shouldn't be too many commits. If you want to make a few more just change a thing, stage and commit a few times. Once you are ready
+There shouldn't be too many commits. If you want to make a few more just change a thing, stage and commit a few times. Once you are ready, 
+find a commit you want to rollback too. Git identifies these with an MD5 hash, _4a04c5e35..._ in this case. You con't have to type the entire 
+thing though, just the first 6-8 characters will usually do. You can see what that branch looked like first. Your checksum will differ.
+
+```bash
+> git checkout 4403fe02
+  # Note: checking out '4403fe02'.
+  # 
+  # You are in 'detached HEAD' state. You can look around, make experimental
+  # changes and commit them, and you can discard any commits you make in this
+  # state without impacting any branches by performing another checkout.
+  # 
+  # If you want to create a new branch to retain commits you create, you may
+  # do so (now or later) by using -b with the checkout command again. Example:
+  # 
+  #   git checkout -b <new-branch-name>
+  # 
+  # HEAD is now at 4403fe0 Initial commit
+```
+
+You can go back to your master branch and reset to that commit with the following.
+
+```bash
+> git checkout master
+> git reset --hard  4403fe02
+```
+
+
+### Catching Your Branch Up With The Base Branch
+
+If you are careful and make branches with your new work, you should rarely have to walk back more 
+than one commit. More common on large projects with lots of collaborators you will need to move the base branch 
+up to your working  branch to get the most recent work. This is called **rebasing** and is pretty much a merge, but
+is used to move a working branch's history up so that it contains the most recent commits from a base branch.
+
+
+
+
