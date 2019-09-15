@@ -64,5 +64,5 @@ You will see that your text changes are gone. But the new file is still there. F
 > git clean -fd
 ```
 
-Now you are back where you started from your last commit.
+Now you are back where you started from your last commit. In fact, it was used few times just in writing this tutorial!
 
