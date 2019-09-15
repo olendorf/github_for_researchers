@@ -45,7 +45,7 @@ haven't been careful about committing changes often enough, or even just made a 
 Fortunately only in the worst situations is most of your work not recoverable, and only if you have 
 been very negligent in your committing and branching. 
 
-## Going back to your last commit.
+## Going Back to Your Last Commit.
 
 Its not unusual to realize your work has gone a bit awry. If you commit often, its often the best course of action to go back to your 
 last commit. First lets add another file. Downlaod the sample file and put it in your `learning_git` directory. Then also, open 
@@ -66,3 +66,14 @@ You will see that your text changes are gone. But the new file is still there. F
 
 Now you are back where you started from your last commit. In fact, it was used few times just in writing this tutorial!
 
+## Going Back to a Specific Commit
+
+Sometimes you may have to go back further than your last commit too. You can do this too. First you need to find the commit you want. 
+
+```bash
+> git log
+  # You should see a list of yoru commits. Hit return to scroll through.
+```
+
+
+There shouldn't be too many commits. If you want to make a few more just change a thing, stage and commit a few times.
