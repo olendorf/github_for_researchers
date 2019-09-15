@@ -114,7 +114,19 @@ You can go back to your master branch and reset to that commit with the followin
 If you are careful and make branches with your new work, you should rarely have to walk back more 
 than one commit. More common on large projects with lots of collaborators you will need to move the base branch 
 up to your working  branch to get the most recent work. This is called **rebasing** and is pretty much a merge, but
-is used to move a working branch's history up so that it contains the most recent commits from a base branch.
+is used to move a working branch's history up so that it contains the most recent commits from a base branch. If you don't have
+a branch off master make one now. Then go back to *master* and make a few changes and commits.
+
+```bash
+> git checkout new-branch
+> git rebase master
+  # First, rewinding head to replay your work on top of it...
+  # Fast-forwarded new-branch to master.
+```
+
+
+
+
 
 
 
