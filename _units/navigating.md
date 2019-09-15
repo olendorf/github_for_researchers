@@ -76,4 +76,4 @@ Sometimes you may have to go back further than your last commit too. You can do 
 ```
 
 
-There shouldn't be too many commits. If you want to make a few more just change a thing, stage and commit a few times. Once
+There shouldn't be too many commits. If you want to make a few more just change a thing, stage and commit a few times. Once you are ready
