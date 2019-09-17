@@ -12,28 +12,13 @@ instructors_notes: true  # Set to true if you want this displayed in instructors
 # Provide a brief description of what the unit is about. You can use markdown
 # notation for this.
 description: |
-  Git becomes an incredibly powerful collaboration and publishing tool when coupled with GitHub.
-  While it may seem confusing at first, GitHub is really just another Git repository. Git has
-  the ability to communicate with any other repository built right in. GitHub just provides a web 
-  interface and many other services to help manage and publish our projects.
-  
-  At this point we refer to the Git repository on our local computer as a *_local_* repository. Other copies 
-  of our work on other computers are called *_remote_* repositories. By convention, we 
-  work with our collabortors by coordinating through a single remote repository, in this case GitHub. 
-  
-  In this unit we create a copy of our local repository to GitHub by **pushing** it. We edit it
-  using the GitHub interface, then **pull** it back into our local repository.
+  Once you have established both local and remote repositories. you can getting to work.
+  Similar to versioning a local project with staging and commits, there are really only
+  two commands you use a lot. **Push** and **Pull** which you have already encountered.
   
   
 instructors_note: |
-  1. Create a GitHub repo
-  2. Create remotes
-    1. Explain what "origin" means
-    2. Branch vs Remote
-  3. Pull GitHub repo to local (weird I know)
-  4. Push to GitHub
-  5. Edit
-  6. Pull back to local
+  just some filler for now.
   
 
   
@@ -49,12 +34,5 @@ instructors_note: |
 #     link_text: Example image for this unit.
 
 ---
-
-## Create a GitHub Repo
-
-
-
-
-
 
 
