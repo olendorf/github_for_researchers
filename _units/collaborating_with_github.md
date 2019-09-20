@@ -1,24 +1,25 @@
 ---
-layout: page
-title: Working With GitHub 
+layout: page   # This is required
+title: Collaborating With GitHub   # This is required
 
-order: 30 
+order: 30
 
 duration: 20
 
 tutorial: true  # Set to true if you want this page displayed as a web page
 instructors_notes: true  # Set to true if you want this displayed in instructors notes
 
-# Provide a brief description of what the unit is about. You can use markdown
-# notation for this.
 description: |
-  Once you have established both local and remote repositories. you can getting to work.
-  Similar to versioning a local project with staging and commits, there are really only
-  two commands you use a lot. **Push** and **Pull** which you have already encountered.
+  One of the biggest benefits of GitHub is how it facilitates collaboration on a number
+  of different levels. Over the years, a culture has grown up around GitHub that specifies 
+  several conventions that facilitate collaboration.
   
-  
+  In this section, we will learn how to copy repositories, add collaborators
+  to our own repositories and even collaborate with people we may not know at all. 
+
 instructors_note: |
-  just some filler for now.
+  This is pulled from `page.instructors_note`, and combined with the 
+  `page.description` field.
   
 
   
@@ -34,5 +35,11 @@ instructors_note: |
 #     link_text: Example image for this unit.
 
 ---
+
+## Add A Collaborator
+
+
+
+
 
 

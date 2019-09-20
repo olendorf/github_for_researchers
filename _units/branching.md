@@ -111,7 +111,20 @@ If you don't need that branch anymore you can delete it now. When you list your 
 
 ```
 
-In the next unit we will work a litte more with commits and branches to see how we can work modify our version tree when needed.
+## Try It Out
+
+Practice making branches, editing your files, commiting those changes and merging branches. Don't be afraid to test the limits a bit. 
+
+
+### Advanced
+Try making two new branches, changing the same things and merging them both into master (not into each other). What happens?
+
+
+
+> HINT: If you get a merge conflict, go to the file indicated. You will see the alternative edits set off with <<< and ====. Edit the file to reflect 
+>        what you want.
+>        Fixing merge conflicts is usually not that hard. Just edit the file to have what you want, then commit it. 
+>       It can be very hard if you have large complicated commits though. Another reason to commit often!
 
 
 

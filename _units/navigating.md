@@ -1,6 +1,6 @@
 ---
 layout: page   # This is required
-title: Navigating Branches and Commits   # This is required
+title: Navigation and Manipulation  # This is required
 
 order: 23
 
@@ -41,7 +41,8 @@ supporting_files:
 
 Sometimes we need to do some slightly more complicated interactions with our git version tree.
 This especially happens when we have made some mistakes that we have to deal with. Maybe we 
-haven't been careful about committing changes often enough, or even just made a huge mess of things.
+haven't been careful about committing changes often enough, or even just made a huge mess of things. Also
+as we'll see in future units, having more collaborators often requires some tree navigation and manipulation.
 Fortunately only in the worst situations is most of your work not recoverable, and only if you have 
 been very negligent in your committing and branching. 
 
@@ -123,6 +124,10 @@ a branch off master make one now. Then go back to *master* and make a few change
   # First, rewinding head to replay your work on top of it...
   # Fast-forwarded new-branch to master.
 ```
+
+## Try It Out
+
+Try making a number of commits, then walking them back. Make some changes to your master branch and rebasing a side branch. 
 
 
 

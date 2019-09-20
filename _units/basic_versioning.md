@@ -91,13 +91,41 @@ it gives you some hints as to what to do next as well. Also notice there are oth
 specify a file or directory as well. The `git add .` for instance will add all the files in your current directory including 
 any subdirectories and their contents.
 
+You can also see the changes you've made.
+
+```bash
+> git diff
+  # diff --git a/first_example_file.txt b/first_example_file.txt
+  # index 4030ec8..5cae1d0 100644
+  # --- a/first_example_file.txt
+  # +++ b/first_example_file.txt
+  # @@ -27,4 +27,6 @@ paleo actually farm-to-table aute gastropub pork belly cred in minim yr.
+  #  Oh. You need a little dummy text for your mockup? How quaint.
+  #  
+  #  
+  # -Here are some edits in the new branch.
+  # \ No newline at end of file
+  # +Here are some edits in the new branch.
+  # +
+  # +These are some edits.
+  # \ No newline at end of file
+  
+
 ```bash
 > git add -A
 > git commit -m "trying out comitting changes."
 ```
     
 Believe it or not, this is most of what you do with Git. The rest of the tutorial is of course important and much of it necessary, but `git add` and `git commit`  are
-probably the most often used commands. In the next unit, we'll learn about branching our work.
+probably the most often used commands. We can do a little more with commits.
+
+## Try It Out
+
+Practice editing your file, editing, changing and adding text. Also try adding additional text files or files of other types. Use the `status`, `diff`, `add` and `commit`
+commands.
+
+
+
 
 
     

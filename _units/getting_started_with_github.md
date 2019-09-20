@@ -151,6 +151,17 @@ Get the repositories URL/URI and on your local machine's terminal enter...
 
 That's it! It's easier than dealing with an existing repository, but in practice both methods end up being common.
 
+## Try It Out
+
+You actually know most of what you need to know to work with GitHub on your own. For the most part working with GitHub. You work locally 
+making commits when appropriate. Also making branches and merging as well. Then pushing work to GitHub, pulling work as others add it.
+
+- Make edits in your local repository and push it up to GitHub
+- Make a new branch, make some edits and send it up to GitHub
+- Try making some edits using the GitHub UI and pull it back to local
+- Spend some time exploring, see what works and what doesn't
+
+
 
 
 
