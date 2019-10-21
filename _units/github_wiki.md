@@ -12,7 +12,7 @@ instructors_notes: true
 # Provide a brief description of what the unit is about. You can use markdown
 # notation for this.
 description: |
-  
+  Each GitHub project comes with its own Wiki. This is very handy for extended documentation, 
 
 instructors_note: |
   This is pulled from `page.instructors_note`, and combined with the 
@@ -35,41 +35,20 @@ instructors_note: |
 
 ---
 
-## An Opinionated Framework
+Since its beginning GitHub as provided a Wiki to go along with each project.  Wiki's are an easy way to publish content to the web. If you go to your project's Wiki you will
+see a green **_Create the first page_** button. You can click that and get started. It gives you an editor and a preview tab. GitHub wikis use
+[GitHub Flavored Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Markdown is a simple way to create good looking web pages. They won't generally 
+be as complex as with HTML but it allows you to create content much faster. You can also mix in HTML if you like as well. GitHub flavored markdown just adds a few bells and whistle 
+that are especially geared towards software projects. You can use other systems by changing the options in the **_Edit mode: _** drop down. 
 
-Apprentice is a Jekyll template for creating workshops. The concept was to
-make it easy to create a hands-on workshop, or even better, multiple workshops, 
-with a consistent structure and feel. It is opinionated in that it makes certain
-assumptions about what a good workshop should be.
+## Try It Out
 
-While the focus is on in person, hands-on learning, there should also
-be a strong online component that learners can come back to as needed.
+Use the cheat sheat linked above to create a few pages in your Wiki. 
 
-The content should be organized and open to all to view. 
+> HINT: You can easily add pages by creating a link with the path to the page you want. 
 
-The content in a workshop shouldn't rely on the creators' or past
-instructors to be viable. Enough information should be given to allow reuse.
+``` markdown
+Some writing [new page text](new-page-path)
 
-The workshops should be *web friendly* in that they are easily indexed 
-and display well on browsers with no additional software needed.
-
-The framework should be as easy as possible for instructors and content
-creators to use and create workshops with. In practice, creating a 
-Power Point presentation may be easier for one workshop, but it would not
-fulfill most of the other requirements.
-
-## Structure
-
-Apprentice is composed of these parts.
-
-- A highly informative home page
-- An online tutorial that mirrors the content of the workshop
-- Instructors notes and timeline for in-person workshops
-- Presentation Slides for additional information
-- Clearly defined prerequisites
-- Clearly defined learning goals and objectives
-
-
-
-
+```
 

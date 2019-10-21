@@ -4,9 +4,9 @@ title: Introduction
 
 order: 1
 
-duration: 15
+duration: 10
 
-tutorial: true
+tutorial: false
 instructors_notes: true
 
 # Provide a brief description of what the unit is about. You can use markdown
