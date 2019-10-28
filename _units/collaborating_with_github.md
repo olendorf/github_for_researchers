@@ -88,6 +88,8 @@ Go to the GitHub repository. Most times you should see a yellow banner with a gr
 dropdown for **_base: master_**. Make sure the other one says **_compare: pull-branch_**. The comment is optional but a good idea. Notice there 
 are options to assign reviewers and asigness (the person to do the actual merge). The other options we'll touch on later. Click **_Create pull request_**. 
 
+<img src="/assets/img/getting_started_with_github/pull_flash.png" alt="Flash message for pull request." width="800">
+
 This doesn't actually merge it yet. It does just what it says, it creates a **_pull request_**, which is a suspended merge. If 
 you click on the *Pull Requests* tab, you see this request. You'll see references to reviews, the changes proposed in this request, and 
 also that there are no merge conflicts. Although there are other tests that can be performed here as well, its beyond the scope of this tutorial. 
