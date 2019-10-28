@@ -45,7 +45,7 @@ instructors_note: |
 
 ---
 
-While they are often thought of as the same thing, they Git and GitHub are really two different things. Git is a 
+While they are often thought of as the same thing, Git and GitHub are really two different things. Git is a 
 versioning system. GitHub is a website that uses Git to facilitate collaboration and project management. Git is open source and free. GitHub
 is a commercial enterprise, although the basic level of service is free. Also while collaborting with Git through GitHub
 is a very powerful tool, we'll also see GitHub provides a number of other features that allows even more powerful collaboration
@@ -57,13 +57,13 @@ also by convention we treat it differently. For security and ease of access, we 
 Much of how we interact with GitHub is by convention. Over time users, and GitHub have found the best ways to interact with it, the best
 workflows and other best practices. 
 
-We typically refer to a repository that is local as our **local repository** or sometimes **working repository**. Any other repository is
+We refer to a repository that is local as our **local repository** or sometimes **working repository**. Any other repository is
 referred to as a **remote repository**.
 
 
 ## Our First GitHub Project
 
-Working with GitHub typically involves at least two repositories, the local repository, and the remote repository on GitHub. There are two ways to get started with any project
+Working with GitHub usually involves at least two repositories, the local repository, and the remote repository on GitHub. There are two ways to get started with any project
 using GitHub. The first being local first, where you have a local repository, create an empty GitHub, remote
 repository and copy your local repo to GitHub. The other way is create a GitHub repo first and **clone** it to your local computer. Since we already
 have a local repository lets do that first.
@@ -88,29 +88,36 @@ if you don't have a local repository yet.
 
 
 
-On your new repository landing page you should see a green **_Clone or download _** button. Click that, if it says "Use HTTPS" click that. 
+On your new repository landing page you should see a green **_Clone or download_** button. Click that, if it says "Use HTTPS" click that. 
 You should see a url that looks something like `https://github/<user_name>/<repo_name>.git`.. Copy it to your clip board and on your local machine, 
 enter the following in your terminal.
 
+> NOTE: HTTPS and SSH cloning both work. HTTPS is usually easier UNLESS you have set up two-factor
+> authentication  (2FA) in GitHub, then HTTPS will not work. In that case, you need to set up 
+[SSH keys](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for your local repository
+> and [register them in GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+
 ```bash
+
 > git remote add origin https://github.com/<user_name>/<repo_name>.git
 > git remote -v 
   # origin  git@github.com:olendorf/github_for_researchers.git (fetch)
   # origin  git@github.com:olendorf/github_for_researchers.git (push)
+  
 ```
 
-This might be a bit confusing. The first part, the URL (or URI) is just the way to find our GitHub repository on the internet. A **remote**
-is Git's way of storing these locations, almost always copies of our own. We tell git to create a remote with
-`git remote add <remote name> <remote URL/URI`. The remote name can be any valid name. No spaces and by convention we use hyphens instead. 
-Also by convention, we name the remote to GitHub *origin*, but it doesn't have to be. The last part, the URL/URI just tells Git where to look.
-The second command `git remote -v` lists all the remotes we have created, the `-v` options telling it to be verbose and list the locations too. 
+This might be a bit confusing. A remote is a stored location somewhere on the internet. A remote has two parts, a name, and a URI (or URL).
+The remote name can be any valid name. No spaces and by convention we use hyphens instead. . By convention, GitHub is called *origin*, 
+you could also call it *github*. The URI is what you copied from GitHub and tells git where to look on the internet. The second command 
+`git remote -v` lists all the remotes we have created, the `-v` options telling it to be verbose and list the locations too. 
 Ignore *fetch* and *push* for now.
-
 
 Now we do a little Texas Two-Step to so that our local and remote repositories are copies. 
 
 ```bash 
+
 > git pull origin master  # you may have to add --allow-unrelated-histories
+  # git pull origin master --allow-unrelated-histories
   #  Response will very some.
   # From github.com:olendorf/learning_git
   #  * branch            master     -> FETCH_HEAD
@@ -130,12 +137,13 @@ Now we do a little Texas Two-Step to so that our local and remote repositories a
   # remote: Resolving deltas: 100% (4/4), done.
   # To github.com:olendorf/learning_git.git
   #    f2bc922..9aacf91  master -> master
+  
 ```
 
 The first command `git pull origin master` tells Git to take what ever is in the remote named origin, on the master branch, and merge it with 
 your local repository. It works pretty much the same as merging to branches in your local repository together. The `git push origin master` 
 is the reverse. It takes the master branch of your local repository and merges it with the master branch on the remote. You can push or pull any branch,
-and if one doesn't exist, its created for you. 
+and if one doesn't exist, it's created for you. 
 
 
 
@@ -146,10 +154,14 @@ Get the repositories URL/URI and on your local machine's terminal enter...
 
 
 ```bash
+
 > git clone https://github.com/<user_name>/<repo_name>.git
+
+> get clone https://github.com/NCSU-Libraries/ncsu_apprentice.git
+
 ```
 
-That's it! It's easier than dealing with an existing repository, but in practice both methods end up being common.
+That's it! It's easier than dealing with an existing repository, but in practice both methods are common.
 
 ## Try It Out
 

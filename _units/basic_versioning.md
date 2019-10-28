@@ -4,7 +4,7 @@ title: Basic Versioning
 
 order: 10 
 
-duration: 15 
+duration: 10
 
 tutorial: true
 instructors_notes: true
@@ -45,19 +45,30 @@ learn the basic, most comman and probably most useful commands in Git.
 To get started make a new directory called "learning_git" and navigate to it.
 
 ```bash
+
 > mkdir learning_git
-> cd learning git
+> cd learning_git
+
 ```
     
-Then download the Supporting file "Example file for this unit" into this directory.
+Then download the Supporting file [**_Example file_**](/supporting_files/first_example_file.txt) 
+for this unit" into this directory.
 
-Now we are going to make our first Git repository. This will make more sense later, but we call this 
-a local repository, because it is on your local computer.
+
+
+Now we are going to make our first Git repository.
 
 ```bash
+
 > git init
+# Initialized empty Git repository in <your location>
 > git add -A
 > git commit -m "initial commit"
+[master (root-commit) 6a074a6] initial commit
+#  1 file changed, 73 insertions(+)
+#  create mode 100644 example.txt
+> 
+
 ```
 
 The last three steps did a few things and are a typical way of creating a new repository. First we **initialized** the repository.
@@ -72,6 +83,7 @@ in that commit.
 Now makes some edits to your text file using any text editor. Try adding lines and workds, deleting things. Then check your status.
 
 ```bash
+
 > git status
 
 # You should see something like this
@@ -84,6 +96,7 @@ Now makes some edits to your text file using any text editor. Try adding lines a
 # 	modified:   first_example_file.txt
 
 # no changes added to commit (use "git add" and/or "git commit -a")
+
 ```
 
 The `status` command can be useful if you lost track of where you are at and want to see all the changes you made. As you can see
@@ -94,6 +107,7 @@ any subdirectories and their contents.
 You can also see the changes you've made.
 
 ```bash
+
 > git diff
   # diff --git a/first_example_file.txt b/first_example_file.txt
   # index 4030ec8..5cae1d0 100644
@@ -109,11 +123,11 @@ You can also see the changes you've made.
   # +
   # +These are some edits.
   # \ No newline at end of file
-  
 
-```bash
 > git add -A
 > git commit -m "trying out comitting changes."
+
+
 ```
     
 Believe it or not, this is most of what you do with Git. The rest of the tutorial is of course important and much of it necessary, but `git add` and `git commit`  are
