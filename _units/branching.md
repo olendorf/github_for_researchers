@@ -28,15 +28,21 @@ instructors_note: |
 ---
 
 Git allows us to create copies of our work called branches. These branches can be developed
-independently, merged back into our main branch or pruned if need be. Branches have many uses.
-They are often used in collaborative projects to allow collabortors to work independently then 
+independently, merged back into our main branch or pruned if need be. They are often used in 
+collaborative projects to allow collabortors to work independently then 
 merge their work. Branches can also be distinct releases of a product, say editions of a book or 
 variations of a manuscript. While relatively simple, entire PhD theses have been written on 
 workflows based on Git branches and their relationship with GitHub and other related services.
 
 ## Create a Branch
 
-Creating a branch is pretty easy, but the command is not entirely untuitive.
+Creating a branch is pretty easy, but the command is not entirely untuitive. You 
+create a branch with `git checkout -b <branch-name>`. The branch name can be just
+about anything so long as it follows these rules.  Branch names cannot begin with a dot ".",
+have double dots, "..", have the characters "~", "^", "\" or a space " " anywhere. Nor can they
+end with "/" or ".lock".it is typically best to name the descriptively. Have a look at this
+[stackoverflow discussion](https://stackoverflow.com/questions/273695/what-are-some-examples-of-commonly-used-practices-for-naming-git-branches) 
+for some thoughts on how to best name branches.
 
 ```bash
 

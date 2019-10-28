@@ -130,12 +130,17 @@ You can also see the changes you've made.
 
 ```
     
-Believe it or not, this is most of what you do with Git. The rest of the tutorial is of course important and much of it necessary, but `git add` and `git commit`  are
+Believe it or not, this is most of what you do with Git. The rest of the tutorial is of 
+course important and much of it necessary, but `git add` and `git commit`  are
 probably the most often used commands. We can do a little more with commits.
+
+
+
 
 ## Try It Out
 
-Practice editing your file, editing, changing and adding text. Also try adding additional text files or files of other types. Use the `status`, `diff`, `add` and `commit`
+Practice editing your file, editing, changing and adding text. Also try adding additional 
+text files or files of other types. Use the `status`, `diff`, `add` and `commit`
 commands.
 
 
