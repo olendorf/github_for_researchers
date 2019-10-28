@@ -40,7 +40,28 @@ instructors_note: |
 
 ---
 
-## What Are GitHub Pages?
+If you want more of a web page feel than a Wiki can give you, GitHub also allows you to generate static web pages. A full tutorial on 
+GitHub pages is far beyond our scope here, but to try it out quickly.
+
+Create a new branch called **_gh-pages_**.
+
+Create a file called `index.md` and add the following lines.
+
+```markdown
+
+## Hello world.
+
+This is my first GitHub Pages page!
+```
+
+Then go to your project settings and scroll down to the GitHub pages section. You will see a notice, and once its green and 
+says its published, follow the link to your new page.
+
+If you read the [documentation](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) you will see there are other ways to organize your GitHub pages as well. 
+
+There is a lot you can do with GitHub pages. Not only do people write documentation for their projects, but you can put personal websites up, presentation slides, even this tutorial 
+is done on GitHub pages!.
+
 
 
 

@@ -51,12 +51,14 @@ is also very well indexed by the search engines as well.
 
 ## Submitting a Pull Request
 
-If you are really feeling helpful or motivated, you can also contribute directly to a project via a pull request. Of course you have already learned about pull requests, but not how to 
-do them when you aren't a collaborator. There is just one more thing to learn to do this. You need to **_fork_** the repository. This is another way to make a copy of a repository. 
+If you are really feeling helpful or motivated, you can also contribute directly to a project via a pull request. Of course you have already learned 
+about pull requests, but not how to do them when you aren't a collaborator. There is just one more thing to learn to do this. You need to **_fork_** the repository. 
+This is another way to make a copy of a repository. 
 
-Go to this [test repository](https://github.com/olendorf/learning_git) and click on the **_Fork_** button. It may ask you where to put it, just choose your own account. Now you have your own version
-of my play repository. Makes some edits and commit them. Now you can make a pull request. Click **_Pull requests_**, then click the green **_New pull request button_**. Set the base repository to *olendor:learning_git*, 
-and use the *develop* branch. Set the compare to your repository and the develop branch. Click **_Create pull request_** and give a nice title and description. Click  **_Create pull request_** again 
+Go to this [test repository](https://github.com/olendorf/hellogitworld.git) and click on the **_Fork_** button. It may ask you where to put it, 
+just choose your own account. Now you have your own version of my play repository (which I forked from someone else!). Makes some edits and commit them. 
+Now you can make a pull request. Click **_Pull requests_**, then click the green **_New pull request button_**. Set the base repository to *olendor:learning_git*, and 
+use the *develop* branch. Set the compare to your repository and the develop branch. Click **_Create pull request_** and give a nice title and description. Click  **_Create pull request_** again 
 and the requst will be posted to the repository. 
 
 At this point, the repository owner or maintainer will review your changes. Any questions will be posted as comments on the pull request issue, and ideally answered by you. Once everything is
