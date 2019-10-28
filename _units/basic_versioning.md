@@ -51,7 +51,7 @@ To get started make a new directory called "learning_git" and navigate to it.
 
 ```
     
-Then download the Supporting file [**_Example file_**]({{ site.supporting_files_path }}first_example_file.txt) 
+Then download the Supporting file [**_Example file_**](/{{ site.supporting_files_path }}first_example_file.txt) 
 for this unit" into this directory.
 
 
