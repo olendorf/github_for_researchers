@@ -67,7 +67,7 @@ We'll introduce a couple new features that help you collaborte. Then we'll move 
 
 ## Pull Requests
 
-Pull requests are just a formal way of doing a merge. It is specific to GitHub, (i.e. not part of Git).Pull requests provide mechanisms and protections
+Pull requests are just a formal way of doing a merge. It is specific to GitHub, (i.e. not part of Git). Pull requests provide mechanisms and protections
 to control how branches are merged among collaborators and provide opportunities for quality control and review.
 
 To start, go to your terminal, and create a new branch in the local repository you clone from your neighbor. Make some edits, then push that branch up to GitHub.

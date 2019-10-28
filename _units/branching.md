@@ -61,9 +61,11 @@ This creates a new branch and moves you onto that branch. You can list your curr
   
 ```
 
+Notice the asterisk __*__ denotes your current branch.
+
 ## Navigating Branches
 
-Move between branches with the `checkout` command.
+Move between branches with the `checkout` command without the `-b` option.
 
 ```bash
 
@@ -131,11 +133,10 @@ If you don't need that branch anymore you can delete it now. When you list your 
 
 ## Try It Out
 
-Practice making branches, editing your files, commiting those changes and merging branches. Don't be afraid to test the limits a bit. 
+1. Practice making branches, editing your files, commiting those changes and merging branches. Don't be afraid to test the limits a bit. 
 
 
-### Advanced
-Try making two new branches, `foo-bar` and `foo-baz`.  Change `Lorem ipsum` in the beginning of the file to different things in each branch. 
+2. Try making two new branches, `foo-bar` and `foo-baz`.  Change `Lorem ipsum` in the beginning of the file to different things in each branch. 
 Merge both into master (not into each other). What happens?
 
 
