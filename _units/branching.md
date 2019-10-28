@@ -67,6 +67,7 @@ Notice the asterisk __*__ denotes your current branch.
 
 Move between branches with the `checkout` command without the `-b` option.
 
+
 ```bash
 
 > git checkout master
@@ -137,6 +138,7 @@ If you don't need that branch anymore you can delete it now. When you list your 
 
 
 2. Try making two new branches, `foo-bar` and `foo-baz`.  Change `Lorem ipsum` in the beginning of the file to different things in each branch. 
+
 Merge both into master (not into each other). What happens?
 
 

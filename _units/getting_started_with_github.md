@@ -93,16 +93,19 @@ On your new repository landing page you should see a green **_Clone or download_
 You should see a url that looks something like `https://github/<user_name>/<repo_name>.git`.. Copy it to your clip board and on your local machine, 
 enter the following in your terminal.
 
+
 <img src="/assets/img/getting_started_with_github/clone_expanded.png" alt="Clone or download with https." width="400">
+
 
 > NOTE: HTTPS and SSH cloning both work. HTTPS is usually easier UNLESS you have set up two-factor
 > authentication  (2FA) in GitHub, then HTTPS will not work. In that case, you need to set up 
 [SSH keys](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for your local repository
 > and [register them in GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
 
+
 Now you need to tell your local repository where your remote repository in GitHub is. In your terminal do the following.
 
-```bash
+
 
 > git remote add origin https://github.com/<user_name>/<repo_name>.git
 > git remote -v 
@@ -124,6 +127,7 @@ Now we do a little Texas Two-Step to so that our local and remote repositories a
 > git pull origin master  # you may have to add --allow-unrelated-histories
 ## OR ##
 > git pull origin master --allow-unrelated-histories
+
   # git pull origin master --allow-unrelated-histories
   #  Response will very some.
   # From github.com:olendorf/learning_git
@@ -184,6 +188,7 @@ just for that purpose.
 Forking a repository is easy. Go to [this repository](https://github.com/NCSU-Libraries/ncsu_apprentice). Click the fork 
 button <img src="/assets/img/getting_started_with_github/fork_button.png" width="60">. Choose your own account, and in a few 
 seconds you will have a copy of it. 
+
 
 ## Try It Out
 

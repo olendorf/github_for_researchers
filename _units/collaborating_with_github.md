@@ -68,6 +68,7 @@ We'll introduce a couple new features that help you collaborte. Then we'll move 
 ## Pull Requests
 
 Pull requests are just a formal way of doing a merge. It is specific to GitHub, (i.e. not part of Git). Pull requests provide mechanisms and protections
+
 to control how branches are merged among collaborators and provide opportunities for quality control and review.
 
 To start, go to your terminal, and create a new branch in the local repository you clone from your neighbor. Make some edits, then push that branch up to GitHub.
@@ -88,7 +89,9 @@ Go to the GitHub repository. Most times you should see a yellow banner with a gr
 dropdown for **_base: master_**. Make sure the other one says **_compare: pull-branch_**. The comment is optional but a good idea. Notice there 
 are options to assign reviewers and asigness (the person to do the actual merge). The other options we'll touch on later. Click **_Create pull request_**. 
 
+
 <img src="/assets/img/getting_started_with_github/pull_flash.png" alt="Flash message for pull request." width="800">
+
 
 This doesn't actually merge it yet. It does just what it says, it creates a **_pull request_**, which is a suspended merge. If 
 you click on the *Pull Requests* tab, you see this request. You'll see references to reviews, the changes proposed in this request, and 

@@ -104,7 +104,7 @@ thing though, just the first 6-8 characters will usually do. You can see what th
   #   git checkout -b <new-branch-name>
   # 
   # HEAD is now at 4403fe0 Initial commit
-  
+
 ```
 
 You will typically checkout previous commits while trying to figure out where your last good commit was made, or while
@@ -217,6 +217,7 @@ Then go back to *master* and make a few changes and commits.
 
 ```bash
 
+
 > get checkout master
 # Make some edits
 
@@ -232,6 +233,7 @@ Then checkout your `rebase-branch` again and do the following.
 ```bash
 
 > git checkout rebase-branch
+
 > git rebase master
   # First, rewinding head to replay your work on top of it...
   # Fast-forwarded new-branch to master.
