@@ -34,8 +34,8 @@ supporting_files:
 #   - file:
 #     file_name: first_example_file.txt
 #     link_text: Example file  for this unit.
-- file_name: another_example_file.png
-  link_text: Another Example image for this unit.
+- file_name: example_file_2.png
+  link_text: Example file 2.
 
 ---
 
@@ -44,25 +44,29 @@ This especially happens when we have made some mistakes that we have to deal wit
 haven't been careful about committing changes often enough, or even just made a huge mess of things. Also
 as we'll see in future units, having more collaborators often requires some tree navigation and manipulation.
 Fortunately only in the worst situations is most of your work not recoverable, and only if you have 
-been very negligent in your committing and branching. 
+been negligent in your committing and branching. 
 
 ## Going Back to Your Last Commit.
 
 Its not unusual to realize your work has gone a bit awry. If you commit often, its often the best course of action to go back to your 
-last commit. First lets add another file. Downlaod the sample file and put it in your `learning_git` directory. Then also, open 
-up your text file and make some edits.
+last commit. First lets add another file. Download the [example_file_2.png](/supporting_files/example_file_2.png) and put it in y
+our `learning_git` directory. Then also, open up your first example file and make some edits.
 
-**OH NO!** You made a horrible mistake! Let's walk it back. So there are the edits you made. If you `git status` you will see that you 
+**OH NO!** You made a horrible mistake! Let's walk it back. If you `git status` you will see that you 
 have made the changes to your text file, and also you created the image file. So lets roll back those changes.
 
 ```bash
-> git rest --hard
+
+> git reset --hard
+
 ```
 
 You will see that your text changes are gone. But the new file is still there. For this we need another command.
 
 ```bash
+
 > git clean -fd
+
 ```
 
 Now you are back where you started from your last commit. In fact, it was used few times just in writing this tutorial!
@@ -72,6 +76,7 @@ Now you are back where you started from your last commit. In fact, it was used f
 Sometimes you may have to go back further than your last commit too. You can do this too. First you need to find the commit you want. 
 
 ```bash
+
 > git log
   # You should see a list of yoru commits. Hit return to scroll through.
   # commit 4a04c5e359539fab014b497706ea8cae942de70d
@@ -79,14 +84,16 @@ Sometimes you may have to go back further than your last commit too. You can do 
   # Date:   Sun Sep 15 13:56:07 2019 +0000
 
 :
+  
 ```
 
 
 There shouldn't be too many commits. If you want to make a few more just change a thing, stage and commit a few times. Once you are ready, 
-find a commit you want to rollback too. Git identifies these with an MD5 hash, _4a04c5e35..._ in this case. You con't have to type the entire 
+find a commit you want to rollback too. Git identifies these with an MD5 hash, _4a04c5e35..._ in this case (yours will be different). You don't have to type the entire 
 thing though, just the first 6-8 characters will usually do. You can see what that branch looked like first. Your checksum will differ.
 
 ```bash
+
 > git checkout 4403fe02
   # Note: checking out '4403fe02'.
   # 
@@ -100,13 +107,16 @@ thing though, just the first 6-8 characters will usually do. You can see what th
   #   git checkout -b <new-branch-name>
   # 
   # HEAD is now at 4403fe0 Initial commit
+  
 ```
 
 You can go back to your master branch and reset to that commit with the following.
 
 ```bash
+
 > git checkout master
 > git reset --hard  4403fe02
+
 ```
 
 
@@ -119,10 +129,12 @@ is used to move a working branch's history up so that it contains the most recen
 a branch off master make one now. Then go back to *master* and make a few changes and commits.
 
 ```bash
+
 > git checkout new-branch
 > git rebase master
   # First, rewinding head to replay your work on top of it...
   # Fast-forwarded new-branch to master.
+  
 ```
 
 ## Try It Out
