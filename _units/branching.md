@@ -65,11 +65,7 @@ Notice the asterisk __*__ denotes your current branch.
 
 ## Navigating Branches
 
-<<<<<<< HEAD
 Move between branches with the `checkout` command without the `-b` option.
-=======
-Move between branches with the `checkout` command.
->>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 
 ```bash
 
@@ -140,12 +136,7 @@ If you don't need that branch anymore you can delete it now. When you list your 
 1. Practice making branches, editing your files, commiting those changes and merging branches. Don't be afraid to test the limits a bit. 
 
 
-<<<<<<< HEAD
 2. Try making two new branches, `foo-bar` and `foo-baz`.  Change `Lorem ipsum` in the beginning of the file to different things in each branch. 
-=======
-### Advanced
-Try making two new branches, `foo-bar` and `foo-baz`.  Change `Lorem ipsum` in the beginning of the file to different things in each branch. 
->>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 Merge both into master (not into each other). What happens?
 
 
