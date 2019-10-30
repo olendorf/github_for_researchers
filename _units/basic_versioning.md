@@ -4,7 +4,7 @@ title: Basic Versioning
 
 order: 10 
 
-duration: 10
+duration: 15
 
 tutorial: true
 instructors_notes: true

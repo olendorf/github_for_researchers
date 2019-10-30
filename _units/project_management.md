@@ -2,11 +2,11 @@
 layout: page   # This is required
 title: Project Management   # This is required
 
-order: 70    # Determines the order of units. Doesn't need to be consecutive though
+order: 43   # Determines the order of units. Doesn't need to be consecutive though
             # or even start with zero, the pages will be displayed in their sort
             # order.
 
-duration: 15 # A hint to how long it will take to cover this topic in mintues.
+duration: 10 # A hint to how long it will take to cover this topic in mintues.
 
 tutorial: true  # Set to true if you want this page displayed as a web page
 instructors_notes: true  # Set to true if you want this displayed in instructors notes
@@ -14,13 +14,13 @@ instructors_notes: true  # Set to true if you want this displayed in instructors
 # Provide a brief description of what the unit is about. You can use markdown
 # notation for this.
 description: |
-  This is pulled from the `page.description` field.
+  GitHub's project management tools are some of the most recent and most useful tools 
+  of GitHub. Some people don't even use the versioning and just use the project 
+  management tools. For instance, one person managed the renovation of their house
+  using GitHub issues and GitHub Projects.
 
 instructors_note: |
-  This is pulled from `page.instructors_note`, and combined with the 
-  `page.description` field.
-  
-  This is not shown in the tutorial pages because `page.tutorial: false`.
+  Just give a tour of the service. Give a little time to play with Github Projects.
   
 
   

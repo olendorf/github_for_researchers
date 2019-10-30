@@ -20,11 +20,7 @@ description: |
   just publish a simple page based on the content we have already created.
 
 instructors_note: |
-  This is pulled from `page.instructors_note`, and combined with the 
-  `page.description` field.
-  
-  This is not shown in the tutorial pages because `page.tutorial: false`.
-  
+
 
   
 # These should resolve to files in the supporting_files directory
@@ -40,8 +36,10 @@ instructors_note: |
 
 ---
 
-If you want more of a web page feel than a Wiki can give you, GitHub also allows you to generate static web pages. A full tutorial on 
-GitHub pages is far beyond our scope here, but to try it out quickly.
+If you want more of a web page feel than a Wiki can give you, GitHub also allows you to 
+generate static web pages. This workshop and tutorial are actually devlivered via GitHub
+pages. A full tutorial on GitHub pages is far beyond our scope here, 
+but to try it out quickly. 
 
 Create a new branch called **_gh-pages_**.
 
@@ -56,6 +54,8 @@ This is my first GitHub Pages page!
 
 Then go to your project settings and scroll down to the GitHub pages section. You will see a notice, and once its green and 
 says its published, follow the link to your new page.
+
+<img src="/assets/img/github_pages/gh-pages_status.png" alt="Status display for github pages" width="900" />
 
 If you read the [documentation](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) you will see there are other ways to organize your GitHub pages as well. 
 

@@ -4,7 +4,7 @@ title: The GitHub Ecosystem
 
 order: 50
 
-duration: 5 
+duration: 0 
 
 tutorial: true
 instructors_notes: true
@@ -16,10 +16,7 @@ description: |
   GitHub's open APIs. The remainder of this tutorial surveys some of these services.
 
 instructors_note: |
-  This is pulled from `page.instructors_note`, and combined with the 
-  `page.description` field.
-  
-  This is not shown in the tutorial pages because `page.tutorial: false`.
+
   
 
   

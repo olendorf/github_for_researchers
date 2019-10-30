@@ -20,13 +20,9 @@ instructors_note: |
   This initial part is a brief slide presentation to present some fundamental concepts. Also
   allows time for late arrivals.
   
-  ## History of Git
-  ## History of GitHub
-  ## What versioning is
-  ## Git Structure
-    - Branches (trees vs network)
-    - Relationship to other repositories
-  ## What we will cover
+  - Brief introduction and history of Git
+  - Centralize, Distributed and Decentralized Networks 
+  - Brief introduction and history to GitHub
   
 
 ---

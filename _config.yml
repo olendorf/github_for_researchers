@@ -18,12 +18,13 @@
 title: GitHub For Researchers             # Name of the workshop
 
 description: |
-  This is just to make changes. Revert back as soon as possible.
+  This is a general tutorial on using Git and GitHub with a bit of an emphasis on 
+  how researchers might use the tools for their work.
 
 
 # Author information 
 author:
-    name: Robert Olendorf 
+    name: Robert Olendorf & Shaun Bennett
     # url:  http://example.com/
     company:
         name: NC State University
