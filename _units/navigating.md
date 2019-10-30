@@ -12,11 +12,8 @@ instructors_notes: true
 # Provide a brief description of what the unit is about. You can use markdown
 # notation for this.
 description: |
-  Sometimes we need to do some slightly more complicated interactions with our git version tree.
-  This especially happens when we have made some mistakes that we have to deal with. Maybe we 
-  haven't been careful about committing changes often enough, or even just made a huge mess of things.
-  Fortunately only in the worst situations is most of your work not recoverable, and only if you have 
-  been very negligent in your committing and branching. 
+  - Learn how to move between commits
+  - Learn three two ways to undo work
 
 instructors_note: |
   1. Create a new branch
@@ -46,7 +43,7 @@ as we'll see in future units, having more collaborators often requires some tree
 Fortunately only in the worst situations is most of your work not recoverable, and only if you have 
 been negligent in your committing and branching. 
 
-## Going Back to Your Last Commit.
+## Undoing Uncommited Work
 
 Its not unusual to realize your work has gone a bit awry. If you commit often, its often the best course of action to go back to your 
 last commit. First lets add another file. Download the [example_file_2.png](/supporting_files/example_file_2.png) and put it in y
@@ -110,27 +107,131 @@ thing though, just the first 6-8 characters will usually do. You can see what th
   
 ```
 
-You can go back to your master branch and reset to that commit with the following.
+You will typically checkout previous commits while trying to figure out where your last good commit was made, or while
+tracking down the origin of some bad work. Once you have found the commit you want you can revert it.
+
+
+
+## Revert To A Previous Commit
+
+Ideally you never commit work that isn't perfect. In the real world you never commit work that isn't perfect. Sometimes
+the best way to fix that is to revert to a previous commit. Git gives us the `revert` command for that.
 
 ```bash
 
-> git checkout master
-> git reset --hard  4403fe02
+# Make some edits.
+> git add -A
+> git commit -m "one commit"
+# Make some edits.
+> git add -A
+> git commit -m "two commit"
+# Make some edits.
+> git add -A
+> git commit -m "three commit"
+# Make some edits.
+> git add -A
+> git commit -m "four commit"
+
+> git log
+# Get the MD5 hash of "two commit"
+
+> git revert df1eb3006
+
+```
+
+Revert doesn't actually roll back all your other commits. In Git, it is considered very
+bad to rewrite history. Instead it takes the commit you specify, and puts that state 
+in front of the commits your rolling back. Conceptually, your tree would look
+something like 
+
+**one commit** -> **two commit** -> **three commit** -> **four commit** -> **two commit**
+
+You can verify this by using `git log`.
+
+```bash
+
+> git log
+# commit c54730a9384811b4adbc65bd6d902cf6e3c35468 (HEAD -> new-branch)
+# Author: Robert Olendorf <drolendorf@gmail.com>
+# Date:   Mon Oct 28 12:37:06 2019 -0400
+# 
+#     Revert "two commit"
+#     
+#     This reverts commit df1eb3006e7ec1fb3f59dc8fdb40b117b07ab19e.
+# 
+# commit 33508a1b308c922c2cdf4f564263b2c31065d527
+# Author: Robert Olendorf <drolendorf@gmail.com>
+# Date:   Mon Oct 28 12:36:58 2019 -0400
+# 
+#     four commit
+# 
+# commit 8d38ac1cd60a0bc2167c1c473189b3f78d3c9b53
+# Author: Robert Olendorf <drolendorf@gmail.com>
+# Date:   Mon Oct 28 12:36:03 2019 -0400
+# 
+#     three commit
+# 
+# commit df1eb3006e7ec1fb3f59dc8fdb40b117b07ab19e
+# Author: Robert Olendorf <drolendorf@gmail.com>
+# Date:   Mon Oct 28 12:35:43 2019 -0400
+# 
+#     two commit
+# 
+# commit a027f097535dc9fad416dd681db3db52a87af085
+# Author: Robert Olendorf <drolendorf@gmail.com>
+# Date:   Mon Oct 28 12:35:20 2019 -0400
+# 
+#     one commit
+# 
+# commit 4c396b1742bab9970b3cd1f595e65067fd1e3197
+# Author: Robert Olendorf <drolendorf@gmail.com>
+# Date:   Mon Oct 28 12:34:33 2019 -0400
+# 
+#     fo0
+# 
+# commit 6a074a6f23ce02709ebeeb00dfbc0a66b5fa6a9b (master)
+# Author: Robert Olendorf <drolendorf@gmail.com>
+# Date:   Mon Oct 28 09:10:54 2019 -0400
+# 
+#     initial commit
 
 ```
 
 
-### Catching Your Branch Up With The Base Branch
+## Catching Your Branch Up With The Base Branch
 
 If you are careful and make branches with your new work, you should rarely have to walk back more 
 than one commit. More common on large projects with lots of collaborators you will need to move the base branch 
 up to your working  branch to get the most recent work. This is called **rebasing** and is pretty much a merge, but
-is used to move a working branch's history up so that it contains the most recent commits from a base branch. If you don't have
-a branch off master make one now. Then go back to *master* and make a few changes and commits.
+is used to move a working branch's history up so that it contains the most recent commits from a base branch. 
+
+If you don't have a branch off master make one now. 
 
 ```bash
 
-> git checkout new-branch
+> git checkout -b rebase-branch
+
+```
+
+Then go back to *master* and make a few changes and commits.
+
+```bash
+
+> get checkout master
+# Make some edits
+
+> git commit -m "first master commit"
+# Make some edits.
+
+> git commit -m "second master commit"
+
+```
+
+Then checkout your `rebase-branch` again and do the following.
+
+```bash
+
+> git checkout rebase-branch
 > git rebase master
   # First, rewinding head to replay your work on top of it...
   # Fast-forwarded new-branch to master.
@@ -139,7 +240,9 @@ a branch off master make one now. Then go back to *master* and make a few change
 
 ## Try It Out
 
-Try making a number of commits, then walking them back. Make some changes to your master branch and rebasing a side branch. 
+- Make some changes to your file then `reset` them.
+
+- Try making a number of commits, then walking them back. Make some changes to your master branch and rebasing a side branch. 
 
 
 

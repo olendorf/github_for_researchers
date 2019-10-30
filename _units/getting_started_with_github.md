@@ -70,19 +70,20 @@ have a local repository lets do that first.
 
 In either case you will need to create a GitHub repository. 
 
-1. At the GitHub website click **_New_** (or **_Start a Project_**). 
+1. At the GitHub website click **_New_** <img src="/assets/img/getting_started_with_github/start_project.png" width="36" alt="new button"> 
+(or **_Start a Project_**) <img src="/assets/img/getting_started_with_github/new_project.png" width="96" alt="Start a project button">. 
 2. Give your repository a name, usually the same as your local repository but it doesn't have to be. 
 3. It is good, but optional to give it a description. 
 4. Choose the public option. You have to pay to make private repositories.
 5. Go ahead and make a README. It is always a good idea to have a README. 
 6. You can also choose a license too if you want. 
 7. Also create a .gitignore.
-8. Click **_Create Repository_**. GitHub does a pretty good job at suggestion best practices, and its usually a good idea to follow them.
+8. Click the green **_Create Repository_**. GitHub does a pretty good job at suggestion best practices, and its usually a good idea to follow them.
  
 If you already have a local repository go to **Linking a Local Repository**, otherwise go to **Cloning a Repository**.
 if you don't have a local repository yet.
 
-# Linking a Local Repository
+## Linking a Local Repository
 
 
 
@@ -92,10 +93,14 @@ On your new repository landing page you should see a green **_Clone or download_
 You should see a url that looks something like `https://github/<user_name>/<repo_name>.git`.. Copy it to your clip board and on your local machine, 
 enter the following in your terminal.
 
+<img src="/assets/img/getting_started_with_github/clone_expanded.png" alt="Clone or download with https." width="400">
+
 > NOTE: HTTPS and SSH cloning both work. HTTPS is usually easier UNLESS you have set up two-factor
 > authentication  (2FA) in GitHub, then HTTPS will not work. In that case, you need to set up 
 [SSH keys](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for your local repository
 > and [register them in GitHub](https://help.github.com/en/github/authenticating-to-github/adding-a-new-ssh-key-to-your-github-account).
+
+Now you need to tell your local repository where your remote repository in GitHub is. In your terminal do the following.
 
 ```bash
 
@@ -117,6 +122,8 @@ Now we do a little Texas Two-Step to so that our local and remote repositories a
 ```bash 
 
 > git pull origin master  # you may have to add --allow-unrelated-histories
+## OR ##
+> git pull origin master --allow-unrelated-histories
   # git pull origin master --allow-unrelated-histories
   #  Response will very some.
   # From github.com:olendorf/learning_git
@@ -147,7 +154,7 @@ and if one doesn't exist, it's created for you.
 
 
 
-# Cloning a GitHub Repository
+## Cloning a GitHub Repository
 
 If don't already have a local repository, but there is a project on GitHub you would like to work on, you can clone it. This is actually very easy.
 Get the repositories URL/URI and on your local machine's terminal enter...
@@ -161,7 +168,22 @@ Get the repositories URL/URI and on your local machine's terminal enter...
 
 ```
 
+You can get the URI by clicking on the clipboard icon on you get when you click on the green **Clone or download** button.
+
 That's it! It's easier than dealing with an existing repository, but in practice both methods are common.
+
+## Forking A GitHub Repository
+
+There is still another way to create a repository. You can **Fork** someone elses repository to your own account that you can 
+then modify independently. There are two reasons to fork a repository. First, you may want to make a contribution to their work. 
+In which case, you would fork the repository, make the changes you like, then submit a **pull request** to the original 
+repository that will allow the owner to incorporate your changes if they so choose. The other common scenario is that
+you would like to use the repository as a jumping off point for your own project. Often these repositories are templates created 
+just for that purpose.
+
+Forking a repository is easy. Go to [this repository](https://github.com/NCSU-Libraries/ncsu_apprentice). Click the fork 
+button <img src="/assets/img/getting_started_with_github/fork_button.png" width="60">. Choose your own account, and in a few 
+seconds you will have a copy of it. 
 
 ## Try It Out
 
