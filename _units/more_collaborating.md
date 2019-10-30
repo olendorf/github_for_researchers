@@ -45,7 +45,12 @@ is alsoindexed by the search engines.
 ## Submitting an External Pull Request
 
 If you are really feeling helpful or motivated, you can also contribute directly to a project via a pull request. Of course you have already learned 
+<<<<<<< HEAD
 about pull requests, but not how to do them when you aren't a collaborator. There is just one more thing to learn to do this. You need to **_fork_** the repository.
+=======
+about pull requests, but not how to do them when you aren't a collaborator. There is just one more thing to learn to do this. You need to **_fork_** the repository. 
+This is another way to make a copy of a repository. 
+>>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 
 Go to this [test repository](https://github.com/olendorf/hellogitworld.git) and click on the **_Fork_** button. It may ask you where to put it, 
 just choose your own account. Now you have your own version of my play repository (which I forked from someone else!). Makes some edits and commit them. 

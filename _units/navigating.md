@@ -105,6 +105,7 @@ thing though, just the first 6-8 characters will usually do. You can see what th
   # 
   # HEAD is now at 4403fe0 Initial commit
   
+<<<<<<< HEAD
 ```
 
 You will typically checkout previous commits while trying to figure out where your last good commit was made, or while
@@ -137,6 +138,8 @@ the best way to fix that is to revert to a previous commit. Git gives us the `re
 
 > git revert df1eb3006
 
+=======
+>>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 ```
 
 Revert doesn't actually roll back all your other commits. In Git, it is considered very
@@ -150,6 +153,7 @@ You can verify this by using `git log`.
 
 ```bash
 
+<<<<<<< HEAD
 > git log
 # commit c54730a9384811b4adbc65bd6d902cf6e3c35468 (HEAD -> new-branch)
 # Author: Robert Olendorf <drolendorf@gmail.com>
@@ -194,6 +198,10 @@ You can verify this by using `git log`.
 # Date:   Mon Oct 28 09:10:54 2019 -0400
 # 
 #     initial commit
+=======
+> git checkout master
+> git reset --hard  4403fe02
+>>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 
 ```
 
@@ -217,6 +225,7 @@ Then go back to *master* and make a few changes and commits.
 
 ```bash
 
+<<<<<<< HEAD
 > get checkout master
 # Make some edits
 
@@ -232,6 +241,9 @@ Then checkout your `rebase-branch` again and do the following.
 ```bash
 
 > git checkout rebase-branch
+=======
+> git checkout new-branch
+>>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 > git rebase master
   # First, rewinding head to replay your work on top of it...
   # Fast-forwarded new-branch to master.

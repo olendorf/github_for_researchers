@@ -55,7 +55,11 @@ We'll introduce a couple new features that help you collaborte. Then we'll move 
 
 ## Pull Requests
 
+<<<<<<< HEAD
 Pull requests are just a formal way of doing a merge. It is specific to GitHub, (i.e. not part of Git). Pull requests provide mechanisms and protections
+=======
+Pull requests are just a formal way of doing a merge. It is specific to GitHub, (i.e. not part of Git).Pull requests provide mechanisms and protections
+>>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 to control how branches are merged among collaborators and provide opportunities for quality control and review.
 
 To start, go to your terminal, and create a new branch in the local repository you clone from your neighbor. Make some edits, then push that branch up to GitHub.
@@ -76,6 +80,7 @@ Go to the GitHub repository. Most times you should see a yellow banner with a gr
 dropdown for **_base: master_**. Make sure the other one says **_compare: pull-branch_**. The comment is optional but a good idea. Notice there 
 are options to assign reviewers and asigness (the person to do the actual merge). The other options we'll touch on later. Click **_Create pull request_**. 
 
+<<<<<<< HEAD
 <img src="/assets/img/getting_started_with_github/pull_flash.png" alt="Flash message for pull request." width="800">
 
 This doesn't actually merge it yet. It does just what it says, it creates a **_pull request_**, which is a suspended merge. If 
@@ -83,6 +88,13 @@ you click on the *Pull Requests* tab, you see this request. You'll see reference
 also that there are no merge conflicts. Although there are other tests that can be performed here as well, its beyond the scope of this tutorial. 
 The important thing is by merging via a pull request, we can ensure that our project maintains a high standard of quality.
 
+=======
+This doesn't actually merge it yet. It does just what it says, it creates a **_pull request_**, which is a suspended merge. If 
+you click on the *Pull Requests* tab, you see this request. You'll see references to reviews, the changes proposed in this request, and 
+also that there are no merge conflicts. Although there are other tests that can be performed here as well, its beyond the scope of this tutorial. 
+The important thing is by merging via a pull request, we can ensure that our project maintains a high standard of quality.
+
+>>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 Once you have decided everything looks good, you can merge the branch. Click the green **_Merge pull request_** button, then click **_Confirm merge_**. 
 You will see **_Pull request successfully merged and closed_**. The merged part probably makes sense, but why closed? This is because a pull 
 request is both a merge, and an issue. We haven't covered issues yet. Briefly, issues is a GitHub feature that allows you to manager your 
