@@ -42,14 +42,16 @@ This is the easiest way to contribute to a project. Look at one of your neighbor
 Click on the **_Issues_**. You can add an issue by clicking **_New issue_** and filling out the simple form, you should provide a desriptive title
 then more detail in the comment. It uses markdown so you can format it, and you can also add files and pictures.
 
+<img src="/assets/img/more_collaboration/issues_tab.png" alt="Issues tab shown on tab bar." width="900">
+
 Issues are used for many things. Within a project team, they are often used to manage tasks, describing what needs to be done, and assigning them 
 to team members. 
 
 In addition, you can contribute to any project with issues. Just go to their issues page, and if they allow it, submit an issue. Typically,
 these will be feature requests, bugs and errors, or even just questions. The good thing about this, is that all this communication is saved so that others can use the information. It
-is also very well indexed by the search engines as well.
+is alsoindexed by the search engines.
 
-## Submitting a Pull Request
+## Submitting an External Pull Request
 
 If you are really feeling helpful or motivated, you can also contribute directly to a project via a pull request. Of course you have already learned 
 about pull requests, but not how to do them when you aren't a collaborator. There is just one more thing to learn to do this. You need to **_fork_** the repository. 
