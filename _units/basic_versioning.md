@@ -4,11 +4,7 @@ title: Basic Versioning
 
 order: 10 
 
-<<<<<<< HEAD
 duration: 15
-=======
-duration: 10
->>>>>>> 09837dba050835ed134a8870ebe9749ae7c64a26
 
 tutorial: true
 instructors_notes: true
